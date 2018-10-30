@@ -21,7 +21,7 @@
 <body>
 <?php
 $_BLOCKCHAINNAME = "@@BLOCKCHAINNAME@@";
-$_BLOCKCHAIND = "@@BITCOIND@@";
+$_BLOCKCHAIND = "@@GROESTLCOIND@@";
 $qry = [];
 $_REURL = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 parse_str($_SERVER['QUERY_STRING'], $qry);

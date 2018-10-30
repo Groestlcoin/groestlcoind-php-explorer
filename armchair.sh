@@ -1,16 +1,16 @@
 #!/bin/bash
 set -x
-#@@BITCOIND@@
+#@@GROESTLCOIND@@
 #@@BLOCKCHAINNAME@@
 #@@COUCHPREFIX@@
 #@@SYM@@
-BITCOIND=${BITCOIND_:="~/bitcoind"}
-BLOCKCHAINNAME=${BLOCKCHAINNAME_:="bitcoin"}
+GROESTLCOIND=${GROESTLCOIND_:="~/groestlcoind"}
+BLOCKCHAINNAME=${BLOCKCHAINNAME_:="groestlcoin"}
 COUCHPREFIX=${COUCHPREFIX_:="http://127.0.0.1:5984"}
-SYM=${SYM_:="btc"}
+SYM=${SYM_:="grs"}
 
 srcfiles=src/
-tokens=(BITCOIND BLOCKCHAINNAME COUCHPREFIX SYM)
+tokens=(GROESTLCOIND BLOCKCHAINNAME COUCHPREFIX SYM)
 mkdir -p target
 cp src/* target
 
